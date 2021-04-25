@@ -83,7 +83,24 @@ https://github.com/DHowett/DirColors -->
                                 </ScriptBlock>
                             </TableColumnItem>
                             <TableColumnItem>
-                                <PropertyName>Length</PropertyName>
+                                <ScriptBlock>
+                                    if ($_ -is [System.IO.FileInfo]) {
+                                        switch ($_.length) {
+                                            { $_ -gt 1pb }
+                                            { "{0:n2} PB" -f ($_ / 1pb) }
+                                            { $_ -gt 1tb }
+                                            { "{0:n2} TB" -f ($_ / 1tb) }
+                                            { $_ -gt 1gb }
+                                            { "{0:n2} GB" -f ($_ / 1gb) }
+                                            { $_ -gt 1mb }
+                                            { "{0:n2} MB" -f ($_ / 1mb) }
+                                            { $_ -gt 1kb }
+                                            { "{0:n2} KB" -f ($_ / 1Kb) }
+                                            default
+                                            { "{0:n2}  B" -f $_ }
+                                        }
+                                    }
+                                </ScriptBlock>
                             </TableColumnItem>
                             <TableColumnItem>
                                 <ScriptBlock>
