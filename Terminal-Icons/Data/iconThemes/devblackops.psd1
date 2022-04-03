@@ -31,6 +31,9 @@
                 projects                = 'nf-seti-project'
                 bin                     = 'nf-oct-file_binary'
                 tests                   = 'nf-mdi-test_tube'
+                windows                 = 'nf-fa-windows'
+                users                   = 'nf-fa-users'
+                favorites               = 'nf-mdi-folder_star'
                 '.config'               = 'nf-seti-config'
                 '.cache'                = 'nf-mdi-cached'
                 '.vscode'               = 'nf-custom-folder_config'
@@ -91,6 +94,7 @@
                 'bitbucket-pipelines.yml'       = 'nf-dev-bitbucket'
                 'bitbucket-pipelines.yaml'      = 'nf-dev-bitbucket'
                 '.azure-pipelines.yml'          = 'nf-mdi-azure'
+
                 # Firebase
                 'firebase.json'                 = 'nf-dev-firebase'
                 '.firebaserc'                   = 'nf-dev-firebase'
@@ -125,6 +129,9 @@
                 'gulpfile.ts'                   = 'nf-dev-gulp'
                 'gulpfile.babel.js'             = 'nf-dev-gulp'
 
+                # Javascript
+                'gruntfile.js'                  = 'nf-seti-grunt'
+
                 # NodeJS
                 'package.json'                  = 'nf-dev-nodejs_small'
                 'package-lock.json'             = 'nf-dev-nodejs_small'
@@ -142,6 +149,9 @@
 
                 # Terraform
                 '.terraform.lock.hcl'           = 'nf-fa-lock'
+
+                # Gradle
+                'gradlew'                       = 'nf-mdi-elephant'
             }
 
             # Archive files
@@ -166,13 +176,22 @@
 
             '.sh'                   = 'nf-oct-terminal'
 
+            # App Packages
+            '.msi'                  = 'nf-mdi-package_variant'
+            '.msix'                 = 'nf-mdi-package_variant'
+            '.msixbundle'           = 'nf-mdi-package_variant'
+            '.appx'                 = 'nf-mdi-package_variant'
+            '.AppxBundle'           = 'nf-mdi-package_variant'
+            '.deb'                  = 'nf-mdi-package_variant'
+            '.rpm'                  = 'nf-mdi-package_variant'
+
             # PowerShell
-            '.ps1'                  = 'nf-dev-terminal_badge'
-            '.psm1'                 = 'nf-dev-terminal_badge'
-            '.psd1'                 = 'nf-dev-terminal_badge'
-            '.ps1xml'               = 'nf-dev-terminal_badge'
-            '.psc1'                 = 'nf-dev-terminal_badge'
-            'pssc'                  = 'nf-dev-terminal_badge'
+            '.ps1'                  = 'nf-mdi-console_line'
+            '.psm1'                 = 'nf-mdi-console_line'
+            '.psd1'                 = 'nf-mdi-console_line'
+            '.ps1xml'               = 'nf-mdi-console_line'
+            '.psc1'                 = 'nf-mdi-console_line'
+            '.pssc'                 = 'nf-mdi-console_line'
 
             # Javascript
             '.js'                   = 'nf-dev-javascript'
@@ -180,10 +199,14 @@
             '.mjs'                  = 'nf-dev-javascript'
 
             # Java
-            '.java'                 = 'nf-dev-java'
+            '.java'                 = 'nf-fae-java'
+            '.jar'                  = 'nf-fae-java'
+
+            '.gradle'               = 'nf-mdi-elephant'
 
             # Python
             '.py'                   = 'nf-dev-python'
+            '.ipynb'                = 'nf-mdi-notebook'
 
             # React
             '.jsx'                  = 'nf-dev-react'
@@ -227,6 +250,7 @@
             '.csproj'               = 'nf-dev-visualstudio'
             '.ruleset'              = 'nf-dev-visualstudio'
             '.sln'                  = 'nf-dev-visualstudio'
+            '.slnf'                 = 'nf-dev-visualstudio'
             '.suo'                  = 'nf-dev-visualstudio'
             '.vb'                   = 'nf-dev-visualstudio'
             '.vbs'                  = 'nf-dev-visualstudio'
@@ -271,6 +295,11 @@
             '.log'                  = 'nf-fa-list'
             '.txt'                  = 'nf-mdi-file_document'
 
+            # Subtitle files
+            '.srt'                  = 'nf-mdi-file_document'
+            '.lrc'                  = 'nf-mdi-file_document'
+            '.ass'                  = 'nf-fa-eye'
+
             # HTML/css
             '.html'                 = 'nf-seti-html'
             '.htm'                  = 'nf-seti-html'
@@ -285,6 +314,9 @@
             '.md'                   = 'nf-dev-markdown'
             '.markdown'             = 'nf-dev-markdown'
             '.rst'                  = 'nf-dev-markdown'
+
+            # Handlebars
+            '.hbs'                  = 'nf-seti-mustache'
 
             # JSON
             '.json'                 = 'nf-seti-json'
@@ -371,6 +403,9 @@
             '.m4a'                  = 'nf-fa-file_audio_o'
             '.wma'                  = 'nf-fa-file_audio_o'
             '.aiff'                 = 'nf-fa-file_audio_o'
+            '.wav'                  = 'nf-fa-file_audio_o'
+            '.aac'                  = 'nf-fa-file_audio_o'
+            '.opus'                 = 'nf-fa-file_audio_o'
 
             # Images
             '.png'                  = 'nf-fa-file_image_o'
@@ -394,7 +429,6 @@
             '.exr'                  = 'nf-fa-file_image_o'
             '.fpx'                  = 'nf-fa-file_image_o'
             '.gbr'                  = 'nf-fa-file_image_o'
-            '.img'                  = 'nf-fa-file_image_o'
             '.jbig2'                = 'nf-fa-file_image_o'
             '.jb2'                  = 'nf-fa-file_image_o'
             '.jng'                  = 'nf-fa-file_image_o'
@@ -466,6 +500,7 @@
             '.rb'                   = 'nf-oct-ruby'
             '.erb'                  = 'nf-oct-ruby'
             '.gemfile'              = 'nf-oct-ruby'
+            'rakefile'              = 'nf-oct-ruby'
 
             # FSharp
             '.fs'                   = 'nf-dev-fsharp'
@@ -497,6 +532,21 @@
             '.tfvars.json'          = 'nf-dev-code_badge'
             '.auto.tfvars'          = 'nf-dev-code_badge'
             '.auto.tfvars.json'     = 'nf-dev-code_badge'
+
+            # Disk Image
+            '.vmdk'                 = 'nf-mdi-harddisk'
+            '.vhd'                  = 'nf-mdi-harddisk'
+            '.vhdx'                 = 'nf-mdi-harddisk'
+            '.img'                  = 'nf-fae-disco'
+            '.iso'                  = 'nf-fae-disco'
+
+            # R language
+            '.R'                    = 'nf-mdi-language_r'
+            '.Rmd'                  = 'nf-mdi-language_r'
+            '.Rproj'                = 'nf-mdi-language_r'
+
+            # Julia language
+            '.jl'                   = 'nf-seti-julia'
         }
     }
 }

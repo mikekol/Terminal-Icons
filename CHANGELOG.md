@@ -5,6 +5,71 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.10.0] Unreleased
+
+### Added
+
+- Add icon and color for Julia language file (.jl)
+### Fixed
+
+- [**#68**](https://github.com/devblackops/Terminal-Icons/issues/68) Symlink rendering on Windows PowerShell
+## [0.9.0] 2022-01-27
+
+### Added
+
+- Add icon and color R language files (.R, .Rmd, and .Rproj)
+
+## [0.8.0] 2021-12-15
+
+### Added
+
+- [**#60**](https://github.com/devblackops/Terminal-Icons/pull/60) Add support for Gradle (*.gradle and gradlew) files (via [@Hexeption](https://github.com/Hexeption))
+- [**#58**](https://github.com/devblackops/Terminal-Icons/pull/58) Add support for Jupyter notebook (*.ipynb) files (via [@gaardhus](https://github.com/gaardhus))
+
+## [0.7.1] 2021-11-22
+
+### Fixed
+
+- Set default preferences if the preferences XML file cannot be parsed for any reason.
+
+## [0.7.0] 2021-11-10
+
+### Added
+
+- [**#53**](https://github.com/devblackops/Terminal-Icons/pull/53) Add color and icon for handlebar (.hbs) files (via [@nikouu](https://github.com/nikouu))
+
+## [0.6.0] 2021-11-08
+
+### Added
+
+- [**#44**](https://github.com/devblackops/Terminal-Icons/pull/44) Added icons for .msi, .msix, .msixbundle, .appx, .appxbundle, .deb, .rpm, .jar, .srt, .lrc, .ass, .wav, .acc, .opus, .vmdk, .vhdx, .iso. (via [@KaranKad](https://github.com/KaranKad))
+- Added option to turn off displaying custom icons or colors with `-DisableIconTheme` and `-DisableColorTheme` switches on the `Set-TerminalIconsTheme` command.
+
+### Changed
+
+- [**#44**](https://github.com/devblackops/Terminal-Icons/pull/44) Changed .img icon to match other disk image formats (via [@KaranKad](https://github.com/KaranKad))
+
+### Removed
+
+- Removed deprecated commands `Set-TerminalIconsColorTheme` and `Set-TerminalIconsIconTheme`. Use `Set-TerminalIconsTheme` instead.
+
+## [0.5.2] 2021-06-18
+
+### Added
+
+- [**#39**](https://github.com/devblackops/Terminal-Icons/pull/39) Added icon and color for Visual Studio Solution filter files (.slnf) (via [@kkoziarski](https://github.com/kkoziarski))
+
+## [0.5.1] 2021-05-21
+
+### Added
+
+- Add icon for `gruntfile.js`
+
+### Changed
+
+- Theme files and preferences are now stored in the directory defined by `$env:XDG_CONFIG_HOME` (if it exists) on Linux and macOS. If not defined, the default of `$HOME/local/share/powershell/Community/Terminal-Icons` is still used.
+- `Get-TerminalIconsGlyphs` now returns glyphs sorted by name
+
 ## [0.5.0] 2021-04-20
 
 ### Added
